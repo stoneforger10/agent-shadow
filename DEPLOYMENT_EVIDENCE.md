@@ -1,9 +1,9 @@
 # StudioNet deployment
 
-- Contract: https://explorer-studio.genlayer.com/address/0xFAE11b94e2dBadeA8cf584f06aE095C6F52300AD
-- Deployment: https://explorer-studio.genlayer.com/tx/0x300c96ece09c66669f77db1c2b18e5fca8d28eb5bd9524de00514275c8b7ae36
+- Contract: https://explorer-studio.genlayer.com/address/0x08bada31A55f1Ce2212AD451637c59f91D851D6c
+- Deployment: https://explorer-studio.genlayer.com/tx/0x5f41205c5fc485a9e933701fe80fa781ab65c17952e746b9bd15d73bb7ea8f7d
 - Status: `FINALIZED`
 - Consensus: `MAJORITY_AGREE`
-- Source SHA-256: `8426201ad50e6e538671f7876ae9359a1c6f3a7d50c0994863bc780a62edec9c`
+- Source SHA-256: `a440d3b907fbb05607e4783611e049f2bcc394a082ccae848fd836663a4ba19c`
 
 Retrieved StudioNet source exactly matches `contracts/AgentShadow.py`.
