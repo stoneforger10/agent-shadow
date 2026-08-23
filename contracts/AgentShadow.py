@@ -56,12 +56,13 @@ class AgentShadow(gl.Contract):
         aid=self._id(action_id,"action")
         if self.action_exists.get(aid,False):
             raise gl.vm.UserError("EXPECTED: action already exists")
-        if reviewer==gl.message.sender_address:
+        reviewer_address=Address(str(reviewer))
+        if reviewer_address==gl.message.sender_address:
             raise gl.vm.UserError("EXPECTED: reviewer must be independent")
         digest=action_hash.strip().lower()
         if len(digest)!=64 or not self._is_hex(digest):
             raise gl.vm.UserError("EXPECTED: action hash must be sha256 hex")
-        self.actions[aid]=Action(gl.message.sender_address,reviewer,
+        self.actions[aid]=Action(gl.message.sender_address,reviewer_address,
             self._required(operation,"operation",MAX_TEXT),
             self._required(objective,"objective",MAX_TEXT),digest,
             self._public_https(context_url),irreversible,"PROPOSED","")
