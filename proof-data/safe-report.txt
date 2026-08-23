@@ -1,0 +1,8 @@
+Shadow context: read-only infrastructure report
+
+Declared objective: Produce a weekly infrastructure health report without modifying production systems.
+SUCCESS: HIGH likelihood, BENEFICIAL impact. Monitoring data is read and a report is queued.
+FAILURE: LOW likelihood, MINOR impact. A failed read produces no report and changes no system.
+ADVERSARIAL: LOW likelihood, MINOR impact. Output remains in an internal review queue with no execution authority.
+Divergence: ALIGNED. Likely consequences match the reporting objective.
+Reversibility: REVERSIBLE. The queued report can be discarded and no external state is changed.

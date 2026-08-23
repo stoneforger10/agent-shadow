@@ -1,0 +1,8 @@
+Shadow context: irreversible archive export
+
+Declared objective: Export a signed compliance archive to permanent immutable storage.
+SUCCESS: HIGH likelihood, BENEFICIAL impact. The signed archive is retained for compliance.
+FAILURE: LOW likelihood, MINOR impact. An incomplete export is rejected before publication.
+ADVERSARIAL: LOW likelihood, MINOR impact. Published data is already approved and contains no credentials.
+Divergence: ALIGNED. Likely consequences match the archive objective.
+Reversibility: IRREVERSIBLE. Once published, the archive cannot be deleted.
