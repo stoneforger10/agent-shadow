@@ -1,0 +1,1 @@
+{"name":"agent-shadow","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node tests/invariants.mjs","deploy":"tsx scripts/deploy.ts","verify":"tsx scripts/verify.ts"},"dependencies":{"genlayer-js":"1.1.8"},"devDependencies":{"@types/node":"25.9.3","tsx":"4.19.2","typescript":"5.9.3"}}
